@@ -1,0 +1,30 @@
+.step-card {
+  &__icon {
+    text-align: center;
+    min-height: 102px;
+    margin-bottom: 20px;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__content {
+    padding-top: 14px;
+    padding-left: 20px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    line-height: 1.2;
+    color: $primary-dark;
+    font-weight: bold;
+  }
+
+  &__num {
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 73px;
+    color: $secondary;
+  }
+}

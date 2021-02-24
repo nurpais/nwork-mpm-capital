@@ -1,0 +1,8 @@
+.service-card {
+  &__icon {
+    min-height: 106px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: flex-end;
+  }
+}

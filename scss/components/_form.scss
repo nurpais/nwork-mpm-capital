@@ -1,0 +1,90 @@
+.form-card {
+  background: #ffffff;
+  padding: 20px 20px 50px 20px;
+  box-shadow: 4px 4px 20px 5px rgba(0, 33, 71, 0.1);
+  border-radius: 15px;
+  position: relative;
+
+  &__heading {
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.form {
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__group {
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: $gray;
+    padding: 10px 20px 15px;
+    width: 100%;
+
+    &--active {
+      border-color: $secondary;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 9px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $primary-dark;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  &__footer {
+    display: flex;
+
+    input {
+      border: 1px solid $primary-light;
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      outline: none;
+      flex-shrink: 0;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include media-breakpoint-up(md) {
+    &__group {
+      display: flex;
+
+      & > *:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+}

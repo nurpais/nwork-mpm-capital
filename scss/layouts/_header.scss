@@ -1,0 +1,13 @@
+.header {
+  background-color: $secondary;
+  padding: 50px 0 70px;
+
+  background-image: url(../../images/bg-header.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+
+  @include media-breakpoint-up(lg) {
+    padding: 120px 0 145px;
+    background-position: bottom right;
+  }
+}

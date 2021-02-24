@@ -1,0 +1,38 @@
+{
+  "name": "MPM-Capital",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "sass scss/main.scss css/main.css --watch",
+    "postcss": "postcss -o css/main.css css/main.css"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.2",
+    "autoprefixer": "^10.2.4",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "minireset.css": "^0.0.7"
+  }
+}

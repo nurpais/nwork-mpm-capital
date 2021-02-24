@@ -1,0 +1,61 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-weight: bold;
+  font-size: 30px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 42px;
+  }
+}
+
+.heading-secondary {
+  font-weight: bold;
+  font-size: 28px;
+  color: $primary-dark;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+  }
+}
+
+.heading-tertiary {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $primary-dark;
+}
+
+.text-gray {
+  color: $gray !important;
+}
+
+.lh-lg {
+  line-height: 1.5 !important;
+}
+
+.text-lg {
+  font-size: 18px;
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+  }
+}
+
+small {
+  font-size: 12px;
+}

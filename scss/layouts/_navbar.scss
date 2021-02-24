@@ -1,0 +1,34 @@
+.navbar {
+  background: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 33, 71, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__button {
+    @media (max-width: 400px) {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .container {
+      height: 90px;
+    }
+  }
+}
+
+.logo {
+  @include media-breakpoint-down(md) {
+    max-width: 200px;
+  }
+}

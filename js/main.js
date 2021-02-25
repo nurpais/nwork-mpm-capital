@@ -13,3 +13,26 @@
     });
   }
 })();
+
+// ACCORDION
+// .accordions
+(function () {
+  if (document.querySelector(".accordion")) {
+    let accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        this.classList.toggle("accordion--active");
+
+        let currentBody = this.querySelector(".accordion__body");
+
+        if (this.classList.contains("accordion--active")) {
+          let padding = window.innerWidth <= 992 ? 14 : 22;
+          currentBody.style.maxHeight = currentBody.scrollHeight + padding + "px";
+        } else {
+          currentBody.style.maxHeight = null;
+        }
+      });
+    });
+  }
+})();

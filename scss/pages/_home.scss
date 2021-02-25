@@ -4,3 +4,14 @@
     padding: 150px 0;
   }
 }
+
+// SECTION STATS
+.section-stats {
+  background-image: url(../../images/bg-stats.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 618px !important;
+  }
+}

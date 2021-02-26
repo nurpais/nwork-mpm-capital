@@ -1,0 +1,23 @@
+.footer {
+  &__main {
+    padding: 68px 0 64px;
+  }
+
+  &__logo {
+    max-width: 240px;
+    display: inline-block;
+  }
+
+  &__copy {
+    background-color: #dcdce4;
+    color: $primary-dark;
+    font-size: 14px;
+    padding: 10px 0 15px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__main {
+      padding: 78px 0 74px;
+    }
+  }
+}

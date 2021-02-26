@@ -32,10 +32,14 @@ $spacers: (
   // =============
   5px: 5px,
   10px: 10px,
+  12px: 12px,
+  14px: 14px,
   15px: 15px,
+  18px: 18px,
   20px: 20px,
   30px: 30px,
   40px: 40px,
+  42px: 42px,
   44px: 44px,
   50px: 50px,
   54px: 54px,
@@ -51,4 +55,5 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "gray": $gray,
+  "dark": $primary-dark,
 );

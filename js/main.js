@@ -15,7 +15,6 @@
 })();
 
 // ACCORDION
-// .accordions
 (function () {
   if (document.querySelector(".accordion")) {
     let accordions = document.querySelectorAll(".accordion");
@@ -33,6 +32,33 @@
           currentBody.style.maxHeight = null;
         }
       });
+    });
+  }
+})();
+
+// REVIEW SWIPER
+(function () {
+  if (document.querySelector(".reviews-swiper")) {
+    const swiper = new Swiper(".reviews-swiper", {
+      // Optional parameters
+      loop: true,
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: ".reviews-swiper .swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+
+        992: {
+          slidesPerView: 3,
+        },
+      },
     });
   }
 })();
